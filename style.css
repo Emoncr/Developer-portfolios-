@@ -1,12 +1,14 @@
 body{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 .first_section{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    background-image: url(imgs/top-banner.png);
 }
 .half{
     padding: 0px 100px;
@@ -16,12 +18,12 @@ body{
     display: block;
 }
 .first_half h1{
-    font-size: 8vh;
+    font-size: 7vh;
     font-weight:200 ;
 }
 .first_half h1 span{
     color: orange;
-    font-size: 12vh;
+    font-size: 11vh;
 }
 .first_half h4{
     font-size: 20px;
@@ -31,6 +33,11 @@ body{
     text-align: justify;
     font-size: 14px;
     font-weight: 100;
+}
+.section_2{
+    background-image: url(imgs/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position:right ;
 }
 .second_half{
     width: 50%;
@@ -45,7 +52,7 @@ body{
 }
 .Top_button button{
     padding: 10px 30px;
-    background-color:orange;
+    background-image: linear-gradient(45deg,orange, tomato);
     border: none;
     border-radius: 6px;
 }
@@ -57,8 +64,123 @@ body{
     font-size: 16px;
 }
 .Top_button button:hover{
-    background-color: rgb(255, 137, 156);
+    background-image: linear-gradient(45deg, tomato,orange);
 }
-.Top_button button:hover a{
+
+
+            /*
+            ============ 
+            2nd section
+            ============
+            */
+.section_2{
+    width: 100%;
+    margin-top: 20vh;
+    display: block;
+    height: 90vh;
+}
+.image1{
+    width: 40%;
+    float: left;
+    padding-left: 3%;
+    display: inline-block;
+}
+.image1 img{
+    width: 100%;
+}
+.half_2nd{
+    width: 50%;
+    display: inline-block;
+    padding-left:7%;
+    /* background-color: red; */
+}
+.half_2nd h1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.half_2nd h4{
+    font-size: 22px;
+    font-weight: 300;
+}
+.half_2nd p{
+    font-size:16px;
+    font: 100px;
+}
+.button{
+    padding:13px 30px;
+    border-radius: 5px;
+    border: 0px solid black;
+    background-image: linear-gradient(45deg, tomato,orange);
+}
+.button:hover{
+    background-image: linear-gradient(45deg,orange, tomato);
+}
+.button a{
+    text-decoration:none;
     color: black;
+    font: 900;
+}
+.section_3{
+    width: 100%;
+    display: block;
+}
+.section_3 h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline orange 5px;
+    margin-bottom: 35px;
+}
+
+        /*=================== 
+        section 4
+        =====================
+        */
+    
+.section_4{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(imgs/exp-bg.png);
+}
+.box{
+    width: 40%;
+    max-height: 350px;
+    height: 350px;
+    box-shadow: 5px 5px 40px gray;
+    background-color: white;
+
+}
+.box h1{
+    font-size: 30px;
+    margin-left: 50px;
+}
+.box h4{
+    color: orange;
+    font-size: 16px;
+    margin-left: 50px;
+    font-weight: 200;
+}
+.box p{
+    margin-left: 50px;
+    font-size: 14px;
+    text-align: left;
+}
+#full_stack_1{ 
+    border-left: 10px solid;
+    border-image: linear-gradient( 180deg, lightsalmon,tomato);
+    border-image-slice: 1; 
+}
+#full_stack{
+    border-left: 10px solid;
+    border-image: linear-gradient( 180deg, rgb(34, 34, 245),rgb(6, 221, 221));
+    border-image-slice: 1; 
+}
+footer h4{
+    text-align: center;
+    font-size: 13px;
+    color: gray;
 }
